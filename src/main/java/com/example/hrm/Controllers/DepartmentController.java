@@ -30,7 +30,7 @@ public class DepartmentController {
         if(!departmentservice.existsById(id)){
             return ResponseEntity
                     .status(HttpStatus.NOT_FOUND)
-                    .body("department not founded");
+                    .body("department ID not founded");
         }
         departmentRequest.setId(id);
         departmentservice.updateDepartment( id,departmentRequest);
