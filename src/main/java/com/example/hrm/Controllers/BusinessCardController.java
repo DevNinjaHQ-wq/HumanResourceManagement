@@ -32,7 +32,7 @@ public class BusinessCardController {
         businessCardService.updateBusinessCard(id,businessCardRequest);
         return ResponseEntity
                 .status(HttpStatus.OK)
-                .body("Businesscard updated successfully");
+                .body("Businesscard  Id updated successfully");
     }
 
     @DeleteMapping("delete-businesscard/{id}")
